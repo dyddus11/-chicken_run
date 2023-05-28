@@ -27,7 +27,6 @@ public class Player : MonoBehaviour
         {
             jumpCount = 2;
             jumping = false;
-            Debug.Log("tt");
         }
     }
      
