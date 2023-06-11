@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerAnimScript : MonoBehaviour
 {
   private Animator animator;
-
   private void Awake()
   {
     animator = GetComponent<Animator>();
@@ -13,10 +12,9 @@ public class PlayerAnimScript : MonoBehaviour
 
   private void Update()
   {
-      if (Input.GetKeyDown(KeyCode.Space))
+      if(Input.GetKeyDown(KeyCode.Space))
       {
-          animator.SetTrigger("isRun");
+          animator.SetTrigger("isJump");
       }
   }
-  
 }
